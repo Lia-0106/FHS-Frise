@@ -1,34 +1,33 @@
-/* Fond derrière le bloc texte + titre */
+/* === FOND UNIQUEMENT SUR LE TEXTE (pas le titre) === */
 .tl-text-content {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 15px 20px;
   border-radius: 4px;
 }
 
-/* Texte noir pour slides spécifiques */
-#les-digerati .tl-text-content p,
-#les-digerati .tl-headline,
-#les-digerati .tl-headline-date,
-#stewart-brand-le-nouveau-lsd .tl-text-content p,
-#stewart-brand-le-nouveau-lsd .tl-headline,
-#stewart-brand-le-nouveau-lsd .tl-headline-date {
-  color: #000000;
+/* === TEXTE NOIR - écrase le !important de TimelineJS === */
+#les-digerati.tl-full-color-background .tl-text p,
+#les-digerati.tl-full-color-background .tl-headline,
+#les-digerati.tl-full-color-background .tl-headline-date,
+#stewart-brand-le-nouveau-lsd.tl-full-color-background .tl-text p,
+#stewart-brand-le-nouveau-lsd.tl-full-color-background .tl-headline,
+#stewart-brand-le-nouveau-lsd.tl-full-color-background .tl-headline-date {
+  color: #000000 !important;
+  text-shadow: none !important;
 }
 
-/* Texte justifié */
+/* === TEXTE JUSTIFIÉ === */
 .tl-slide .tl-text-content p {
   text-align: justify;
 }
 
 /* === ERAS ALTERNÉES === */
 .tl-timenav-era:nth-child(odd) {
-  background-color: #f5f5f0 !important; /* blanc cassé */
+  background-color: #f5f5f0 !important;
 }
 .tl-timenav-era:nth-child(even) {
-  background-color: #e0e0e0 !important; /* gris clair */
+  background-color: #e0e0e0 !important;
 }
-
-/* === TEXTE DES ERAS plus visible === */
 .tl-timenav-era p {
   color: #1d1d1d !important;
   font-size: 0.72em;
