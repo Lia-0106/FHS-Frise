@@ -3,7 +3,7 @@
    ============================================ */
 
 .tl-text-headline-container {
-  padding: 0 0 10px 0;
+  padding: 0 0 5px 0;
 }
 
 .tl-text-content {
@@ -90,22 +90,29 @@
   max-width: 100% !important;
 }
 
-/* Crédit et légende côte à côte sous l'image */
-.tl-media-content {
+/* Crédit + légende côte à côte */
+.tl-media-content-container {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
 }
 
-.tl-media-content .tl-credit,
-.tl-media-content .tl-caption {
-  display: inline !important;
+.tl-media-content-container .tl-credit,
+.tl-media-content-container .tl-caption {
+  display: inline-block !important;
   width: auto !important;
 }
 
-/* Wrapper crédit+légende sur une même ligne */
-.tl-media-content .tl-credit + .tl-caption {
-  margin-left: 6px !important;
+/* Les deux sur la même ligne */
+.tl-media-content-container > .tl-credit,
+.tl-media-content-container > .tl-caption {
+  float: left !important;
+  margin-right: 8px !important;
+}
+
+/* Espace entre titre et date */
+.tl-headline {
+  margin-bottom: 10px !important;
 }
 
 /* ============================================
