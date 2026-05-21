@@ -5,9 +5,6 @@
   border-radius: 4px;
 }
 
-.tl-slide .tl-text .tl-text-content {
-  margin-top: 200px !important;
-}
 
 /* === PADDING TITRE ET DATE === */
 .tl-text-headline-container {
@@ -59,27 +56,30 @@
 
 /* === MARQUEURS === */
 .tl-timemarker .tl-timemarker-content-container {
-  background-color: #ffffff;
-  border: 1px solid #bbbbbb;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  background-color: #ffffff !important;
+  border: 1px solid #bbbbbb !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
 }
+
 .tl-timemarker .tl-timemarker-text p {
-  color: #444444;
+  color: #444444 !important;
   font-size: 0.68em;
 }
 
 /* Marqueur actif */
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
-  background-color: #222222;
-  border-color: #222222;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  background-color: #222222 !important;
+  border-color: #222222 !important;
 }
+
 .tl-timemarker.tl-timemarker-active .tl-timemarker-text p {
-  color: #ffffff;
+  color: #ffffff !important;
 }
-.tl-timemarker.tl-timemarker-active .tl-timemarker-line-left,
-.tl-timemarker.tl-timemarker-active .tl-timemarker-line-right {
-  background-color: #444444;
+
+/* === ESPACE TITRE / TEXTE === */
+.tl-slide .tl-text .tl-text-content {
+  margin-top: 20px !important;
+  padding: 15px 20px !important;
 }
 
 /* === DATES === */
