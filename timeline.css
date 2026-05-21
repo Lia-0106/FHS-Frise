@@ -30,7 +30,7 @@
 
 /* === TEXTE DES ERAS plus visible === */
 .tl-timenav-era p {
-  color: #111111 !important;
+  color: #1d1d1d !important;
   font-size: 0.72em;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -39,7 +39,7 @@
 
 /* === TIMELINE NAVIGATION === */
 .tl-timeline {
-  background-color: #111111;
+  background-color: #1d1d1d;
 }
 .tl-timenav-line {
   background-color: #ffffff;
