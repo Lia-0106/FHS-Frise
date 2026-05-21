@@ -109,34 +109,12 @@
 }
 
 /* ============================================
-   TIMELINE EN BAS - FOND SOMBRE
-   ============================================ */
-
-/* .tl-timenav,
-.tl-timenav-slider,
-.tl-timenav-slider-background,
-.tl-timenav-container-mask,
-.tl-timenav-container,
-.tl-timenav-item-container,
-.tl-timeaxis-background {
-  background-color: #1e1e1e !important;
-}
-
-.tl-timenav {
-  border-top: 2px solid #333333 !important;
-}
-
-.tl-timenav-line {
-  background-color: #555555 !important;
-} */
-
-/* ============================================
    LABELS DE GROUPES
    ============================================ */
 
 .tl-timegroup-message {
   color: #aaaaaa !important;
-  font-size: 0.65em !important;
+  font-size: 0.85em !important;
   font-weight: 700 !important;
   letter-spacing: 0.08em !important;
   text-transform: uppercase !important;
