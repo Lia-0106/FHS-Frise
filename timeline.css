@@ -2,19 +2,16 @@
    SLIDES - CONTENU
    ============================================ */
 
-/* Alignement titre et texte */
 .tl-text-headline-container {
   padding: 0 0 10px 0;
 }
 
-/* Espace entre titre et texte */
 .tl-text-content {
   margin-top: 15px !important;
   padding: 10px 15px !important;
   border-radius: 4px;
 }
 
-/* Texte justifié */
 .tl-slide .tl-text-content p {
   text-align: justify;
 }
@@ -23,15 +20,10 @@
    FOND SEMI-TRANSPARENT sur le texte
    ============================================ */
 
-/* Sur les slides avec image de fond */
 .tl-full-image-background .tl-text-content,
 .tl-full-color-background .tl-text-content {
   background-color: rgba(0, 0, 0, 0.45) !important;
 }
-
-/* ============================================
-   TEXTE BLANC par défaut sur fonds colorés
-   ============================================ */
 
 .tl-full-color-background .tl-text-content p,
 .tl-full-image-background .tl-text-content p {
@@ -64,24 +56,35 @@
   text-shadow: none !important;
 }
 
+/* ============================================
+   IMAGES
+   ============================================ */
+
 /* === IMAGES === */
+.tl-media {
+  overflow: hidden !important;
+}
+
 img.tl-media-image {
-  max-height: 45vh !important;
+  max-height: 60vh !important;
+  max-width: 100% !important;
   width: auto !important;
   height: auto !important;
   object-fit: contain !important;
+  display: block !important;
 }
-
 
 /* ============================================
    TIMELINE EN BAS
    ============================================ */
 
-
-/* Fond général plus chaud */
 .tl-timenav {
   background-color: #f2f2f2 !important;
   border-top: 2px solid #dddddd;
+}
+
+.tl-timenav-line {
+  background-color: #cccccc !important;
 }
 
 /* Marqueurs normaux */
@@ -92,20 +95,15 @@ img.tl-media-image {
   box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
 }
 
+/* .tl-timemarker.tl-timemarker-active .tl-timemarker-text p {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5) !important;
+} */
+
 .tl-timemarker .tl-timemarker-text p {
   color: #333333 !important;
   font-size: 0.68em !important;
-}
-
-/* Marqueur actif — plus doux */
-.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
-  background-color: #444444 !important;
-  border-color: #444444 !important;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
-}
-
-.tl-timemarker.tl-timemarker-active .tl-timemarker-text p {
-  color: #ffffff !important;
 }
 
 /* Hover */
@@ -116,6 +114,18 @@ img.tl-media-image {
 
 .tl-timemarker:hover .tl-timemarker-text p {
   color: #111111 !important;
+}
+
+/* Marqueur actif */
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
+  background-color: rgba(255,255,255,0.85) !important;
+  border: 2px solid #333333 !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+}
+
+.tl-timemarker.tl-timemarker-active .tl-timemarker-text p {
+  color: #111111 !important;
+  font-weight: 600 !important;
 }
 
 .tl-timemarker.tl-timemarker-active .tl-timemarker-line-left,
@@ -140,9 +150,4 @@ img.tl-media-image {
 .tl-timeaxis .tl-timeaxis-tick p {
   color: #999999 !important;
   font-size: 0.72em !important;
-}
-
-/* Ligne centrale */
-.tl-timenav-line {
-  background-color: #cccccc !important;
 }
