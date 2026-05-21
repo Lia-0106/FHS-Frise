@@ -75,6 +75,7 @@ img.tl-media-image {
   height: auto !important;
   object-fit: contain !important;
   display: block !important;
+  margin: 0 auto !important;
 }
 
 /* ============================================
