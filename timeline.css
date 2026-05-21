@@ -97,18 +97,6 @@ img.tl-media-image {
    TIMELINE EN BAS - SOMBRE
    ============================================ */
 
-div.tl-timenav,
-div.tl-timenav-slider,
-div.tl-timenav-slider-background,
-div.tl-timenav-container-mask,
-div.tl-timenav-container {
-  background-color: #1e1e1e !important;
-}
-
-div.tl-timeaxis-background {
-  background-color: #1e1e1e !important;
-}
-
 
 .tl-timegroup-message {
   color: #222222 !important;
