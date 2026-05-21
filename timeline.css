@@ -74,19 +74,20 @@ img.tl-media-image {
   width: auto !important;
   height: auto !important;
   object-fit: contain !important;
-  display: inline !important;
+  display: block !important;
+  margin: 0 auto !important;
 }
 
 .tl-media-content {
-  text-align: center !important;
-  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
 }
 
 .tl-media-content-container {
   display: flex !important;
-  justify-content: center !important;
+  flex-direction: column !important;
   align-items: center !important;
-  width: 100% !important;
 }
 
 /* ============================================
