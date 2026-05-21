@@ -2,26 +2,19 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Test</title>
+  <title>Aux sources de l'utopie numérique</title>
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
 </head>
 <body>
-  <div id="timeline-embed" style="width:100%; height:600px;"></div>
+  <div id="timeline-embed" style="width:100%; height:100vh;"></div>
   <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
   <script>
     window.onload = function() {
-      var data = {
-        "title": {
-          "text": {"headline": "Test frise","text": "Ceci est un test"}
-        },
-        "events": [
-          {
-            "start_date": {"year": "1969"},
-            "text": {"headline": "ARPANET","text": "Création d'ARPANET"}
-          }
-        ]
-      };
-      var timeline = new TL.Timeline('timeline-embed', data);
+      var timeline = new TL.Timeline(
+        'timeline-embed',
+        'https://docs.google.com/spreadsheets/d/e/2PACX-1vR4TLsfvuVCuW75Yv--ovAlkGv5i6gp60V2zqZrZg6K86jTdfmjrToIl0wfZXNdPQNWVgK-4t26oc9T/pub?output=csv',
+        { theme: 'https://Lia-0106.github.io/FHS-Frise/timeline.css' }
+      );
     };
   </script>
 </body>
