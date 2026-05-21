@@ -57,16 +57,19 @@
 }
 
 /* ============================================
-   IMAGES
+   IMAGES - sans scrollbar
    ============================================ */
 
-/* === IMAGES === */
-.tl-media {
+.tl-slide-scrollable-container {
+  overflow: hidden !important;
+}
+
+.tl-media-content-container {
   overflow: hidden !important;
 }
 
 img.tl-media-image {
-  max-height: 60vh !important;
+  max-height: 50vh !important;
   max-width: 100% !important;
   width: auto !important;
   height: auto !important;
@@ -75,52 +78,60 @@ img.tl-media-image {
 }
 
 /* ============================================
-   TIMELINE EN BAS
+   TIMELINE EN BAS - SOMBRE
    ============================================ */
 
 .tl-timenav {
-  background-color: #f2f2f2 !important;
-  border-top: 2px solid #dddddd;
+  background-color: #1e1e1e !important;
+  border-top: 2px solid #333333 !important;
 }
 
 .tl-timenav-line {
-  background-color: #cccccc !important;
+  background-color: #555555 !important;
+}
+
+/* Eras */
+.tl-timenav-era {
+  background-color: #2a2a2a !important;
+  border-top: 1px solid #444444 !important;
+}
+
+.tl-timenav-era p {
+  color: #aaaaaa !important;
+  font-size: 0.68em !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
 }
 
 /* Marqueurs normaux */
 .tl-timemarker .tl-timemarker-content-container {
-  background-color: #ffffff !important;
-  border: 1px solid #bbbbbb !important;
+  background-color: #2e2e2e !important;
+  border: 1px solid #555555 !important;
   border-radius: 3px !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3) !important;
 }
 
-/* .tl-timemarker.tl-timemarker-active .tl-timemarker-text p {
-  color: #ffffff !important;
-  font-weight: 700 !important;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.5) !important;
-} */
-
 .tl-timemarker .tl-timemarker-text p {
-  color: #333333 !important;
+  color: #cccccc !important;
   font-size: 0.68em !important;
 }
 
 /* Hover */
 .tl-timemarker:hover .tl-timemarker-content-container {
-  background-color: #eeeeee !important;
-  border-color: #999999 !important;
+  background-color: #3a3a3a !important;
+  border-color: #888888 !important;
 }
 
 .tl-timemarker:hover .tl-timemarker-text p {
-  color: #111111 !important;
+  color: #ffffff !important;
 }
 
 /* Marqueur actif */
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
-  background-color: rgba(255,255,255,0.85) !important;
-  border: 2px solid #333333 !important;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15) !important;
+  background-color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
 }
 
 .tl-timemarker.tl-timemarker-active .tl-timemarker-text p {
@@ -130,24 +141,11 @@ img.tl-media-image {
 
 .tl-timemarker.tl-timemarker-active .tl-timemarker-line-left,
 .tl-timemarker.tl-timemarker-active .tl-timemarker-line-right {
-  background-color: #666666 !important;
-}
-
-/* Eras */
-.tl-timenav-era {
-  border-top: 1px solid #dddddd !important;
-}
-
-.tl-timenav-era p {
-  color: #555555 !important;
-  font-size: 0.68em !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.1em !important;
-  text-transform: uppercase !important;
+  background-color: #888888 !important;
 }
 
 /* Dates */
 .tl-timeaxis .tl-timeaxis-tick p {
-  color: #999999 !important;
+  color: #666666 !important;
   font-size: 0.72em !important;
 }
