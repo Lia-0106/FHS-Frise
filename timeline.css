@@ -1,5 +1,5 @@
 /* ============================================
-   SLIDES - CONTENU
+   SLIDES - CONTENU TEXTE
    ============================================ */
 
 .tl-text-headline-container {
@@ -17,7 +17,7 @@
 }
 
 /* ============================================
-   FOND SEMI-TRANSPARENT sur le texte
+   FOND SEMI-TRANSPARENT sur slides image/couleur
    ============================================ */
 
 .tl-full-image-background .tl-text-content,
@@ -108,25 +108,23 @@ img.tl-media-item.tl-media-image.tl-media-shadow {
   max-width: 100% !important;
 }
 
-
 /* ============================================
-   TIMELINE EN BAS - SOMBRE
+   TIMELINE EN BAS - FOND SOMBRE
+   Cible large pour battre les styles inline
+   de TL.TimeNav.less
    ============================================ */
 
-
-.tl-timegroup-message {
-  color: #222222 !important;
-  text-shadow: none !important;
-}
-
-.tl-timenav,
-.tl-timenav-slider-background,
-.tl-timenav-container-mask {
+.tl-timeline .tl-timenav,
+.tl-timeline .tl-timenav-slider,
+.tl-timeline .tl-timenav-slider-background,
+.tl-timeline .tl-timenav-container-mask,
+.tl-timeline .tl-timenav-container,
+.tl-timeline .tl-timenav-item-container,
+.tl-timeline .tl-timeaxis-background {
   background-color: #1e1e1e !important;
 }
 
-.tl-timenav {
-  background-color: #1e1e1e !important;
+.tl-timeline .tl-timenav {
   border-top: 2px solid #333333 !important;
 }
 
@@ -134,26 +132,46 @@ img.tl-media-item.tl-media-image.tl-media-shadow {
   background-color: #555555 !important;
 }
 
-/* Eras */
+/* ============================================
+   LABELS DE GROUPES - lisibles sur fond sombre
+   ============================================ */
+
+.tl-timegroup-message {
+  color: #aaaaaa !important;
+  font-size: 0.65em !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  text-shadow: none !important;
+}
+
+/* ============================================
+   ERAS
+   ============================================ */
+
 .tl-timenav-era {
   background-color: #2a2a2a !important;
   border-top: 1px solid #444444 !important;
 }
 
 .tl-timenav-era p {
-  color: #222222 !important;
+  color: #888888 !important;
   font-size: 0.68em !important;
   font-weight: 700 !important;
   letter-spacing: 0.1em !important;
   text-transform: uppercase !important;
 }
 
-/* Marqueurs normaux */
+/* ============================================
+   MARQUEURS
+   ============================================ */
+
+/* Normal */
 .tl-timemarker .tl-timemarker-content-container {
   background-color: #2e2e2e !important;
   border: 1px solid #555555 !important;
   border-radius: 3px !important;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.3) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important;
 }
 
 .tl-timemarker .tl-timemarker-text p {
@@ -171,11 +189,11 @@ img.tl-media-item.tl-media-image.tl-media-shadow {
   color: #ffffff !important;
 }
 
-/* Marqueur actif */
+/* Actif */
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
   background-color: #ffffff !important;
   border: 2px solid #ffffff !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4) !important;
 }
 
 .tl-timemarker.tl-timemarker-active .tl-timemarker-text p {
@@ -188,8 +206,11 @@ img.tl-media-item.tl-media-image.tl-media-shadow {
   background-color: #888888 !important;
 }
 
-/* Dates */
+/* ============================================
+   DATES SUR L'AXE
+   ============================================ */
+
 .tl-timeaxis .tl-timeaxis-tick p {
-  color: #666666 !important;
+  color: #888888 !important;
   font-size: 0.72em !important;
 }
