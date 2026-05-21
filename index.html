@@ -2,17 +2,22 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Test</title>
+  <title>Aux sources de l'utopie numérique</title>
   <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  <style>
+    body { margin: 0; padding: 0; }
+    #timeline-embed { width: 100%; height: 100vh; }
+  </style>
 </head>
 <body>
-  <div id="timeline-embed" style="width:100%; height:600px;"></div>
+  <div id="timeline-embed"></div>
   <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
   <script>
     window.onload = function() {
-      var timeline = new TL.Timeline(
+      new TL.Timeline(
         'timeline-embed',
-        'https://docs.google.com/spreadsheets/d/1BVsaIHhqh7A1QAml8eGc01aFmY25evfn7L-0EadU2fk/edit#gid=0'
+        'https://docs.google.com/spreadsheets/d/1BVsaIHhqh7A1QAml8eGc01aFmY25evfn7L-0EadU2fk/edit#gid=0',
+        { theme: "https://Lia-0106.github.io/FHS-Frise/timeline.css" }
       );
     };
   </script>
