@@ -1,3 +1,64 @@
-.tl-slide.tl-slide-titleslide .tl-slide-content {
-  background-color: #d301a9 ;
+.tl-slide .tl-slide-content .tl-text p {
+  text-align: justify;
+}
+
+/* === TIMELINE NAVIGATION (barre du bas) === */
+
+/* Fond général */
+.tl-timeline {
+  background-color: #111111;
+}
+
+/* Ligne centrale */
+.tl-timenav-line {
+  background-color: #ffffff;
+}
+
+/* Barres de groupes */
+.tl-timenav-era {
+  background-color: #222222 !important;
+  border-top: 1px solid #444444;
+}
+
+/* Texte des groupes */
+.tl-timenav-era p {
+  color: #ffffff !important;
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Marqueurs */
+.tl-timemarker .tl-timemarker-content-container {
+  background-color: #222222;
+  border: 1px solid #666666;
+}
+
+/* Texte des marqueurs */
+.tl-timemarker .tl-timemarker-text p {
+  color: #cccccc;
+  font-size: 0.7em;
+}
+
+/* Marqueur actif */
+.tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+.tl-timemarker.tl-timemarker-active .tl-timemarker-text p {
+  color: #111111;
+}
+
+/* Ligne du marqueur actif */
+.tl-timemarker.tl-timemarker-active .tl-timemarker-line-left,
+.tl-timemarker.tl-timemarker-active .tl-timemarker-line-right {
+  background-color: #ffffff;
+}
+
+/* Dates */
+.tl-timeaxis .tl-timeaxis-tick p {
+  color: #888888;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
 }
