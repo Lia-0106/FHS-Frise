@@ -83,44 +83,57 @@
   margin: 0 auto !important;
 }
 
-.tl-credit,
-.tl-caption {
-  text-align: center !important;
-  width: auto !important;
-  max-width: 100% !important;
+/* ============================================
+   CAPTION - centré, sans ombre, sans crédit
+   ============================================ */
+
+.tl-credit {
+  display: none !important;
 }
 
 .tl-caption {
+  float: none !important;
   margin-right: 0 !important;
+  display: block !important;
+  width: 100% !important;
   text-align: center !important;
-  font-family: 'Inter', sans-serif !important;
+  font-family: Arial, sans-serif !important;
   font-size: 0.85em !important;
   color: #888888 !important;
+  text-shadow: none !important;
 }
 
-/* Crédit + légende côte à côte */
 .tl-media-content-container {
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
 }
 
-.tl-media-content-container .tl-credit,
-.tl-media-content-container .tl-caption {
-  display: inline-block !important;
-  width: auto !important;
-}
-
-/* Les deux sur la même ligne */
-.tl-media-content-container > .tl-credit,
-.tl-media-content-container > .tl-caption {
-  float: left !important;
-  margin-right: 8px !important;
-}
-
 /* Espace entre titre et date */
 .tl-headline {
   margin-bottom: 10px !important;
+}
+
+/* ============================================
+   TIMELINE EN BAS - FOND SOMBRE
+   ============================================ */
+
+.tl-timenav,
+.tl-timenav-slider,
+.tl-timenav-slider-background,
+.tl-timenav-container-mask,
+.tl-timenav-container,
+.tl-timenav-item-container,
+.tl-timeaxis-background {
+  background-color: #1e1e1e !important;
+}
+
+.tl-timenav {
+  border-top: 2px solid #333333 !important;
+}
+
+.tl-timenav-line {
+  background-color: #555555 !important;
 }
 
 /* ============================================
