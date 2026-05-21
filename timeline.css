@@ -78,6 +78,12 @@ img.tl-media-image {
   margin: 0 auto !important;
 }
 
+.tl-media-content {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
 /* ============================================
    TIMELINE EN BAS - SOMBRE
    ============================================ */
