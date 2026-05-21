@@ -43,10 +43,8 @@
    TEXTE NOIR sur slides spécifiques
    ============================================ */
 
-#les-digerati .tl-text-content p,
 #les-digerati .tl-headline,
 #les-digerati .tl-headline-date,
-#stewart-brand-le-nouveau-lsd .tl-text-content p,
 #stewart-brand-le-nouveau-lsd .tl-headline,
 #stewart-brand-le-nouveau-lsd .tl-headline-date {
   color: #000000 !important;
