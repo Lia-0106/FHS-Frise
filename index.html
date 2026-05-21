@@ -7,16 +7,19 @@
     body { margin: 0px; padding: 0; }
     #timeline-embed { width: 100%; height: 100vh; }
   </style>
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
 </head>
 <body>
   <div id="timeline-embed"></div>
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
   <script>
-    window.timeline_config = {
-      source: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR4TLsfvuVCuW75Yv--ovAlkGv5i6gp60V2zqZrZg6K86jTdfmjrToIl0wfZXNdPQNWVgK-4t26oc9T/pubhtml",
+    var additionalOptions = {
+      source: "1BVsaIHhqh7A1QAml8eGc01aFmY25evfn7L-0EadU2fk",
       theme: "https://Lia-0106.github.io/FHS-Frise/timeline.css"
     }
+    var timeline = new TL.Timeline('timeline-embed', 
+      "https://docs.google.com/spreadsheets/d/1BVsaIHhqh7A1QAml8eGc01aFmY25evfn7L-0EadU2fk/edit#gid=0",
+      additionalOptions);
   </script>
-  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
-  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
 </body>
 </html>
