@@ -1,6 +1,5 @@
 /* Fond derrière le bloc texte + titre */
-.tl-slide .tl-text-content,
-.tl-slide .tl-text-headline-container {
+.tl-slide .tl-text-content {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 15px 20px;
   border-radius: 4px;
