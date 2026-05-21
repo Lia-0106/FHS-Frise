@@ -91,11 +91,11 @@
 }
 
 .tl-caption {
+  margin-right: 0 !important;
   text-align: center !important;
-  font-family: 'Helvetica Neue', Arial, sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
   font-size: 0.85em !important;
   color: #888888 !important;
-  font-style: normal !important;
 }
 
 /* Crédit + légende côte à côte */
