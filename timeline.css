@@ -122,6 +122,17 @@
   margin-bottom: 10px !important;
 }
 
+#arpanet-naissance-de-la-contre-culture .tl-caption,
+#nls-la-mere-de-toutes-les-demos- .tl-caption,
+#les-digerati .tl-caption,
+#militants-de-linternet .tl-caption,
+#declaration-dindependance-du-cyberespace .tl-caption,
+#la-contre-culture-recyclee-en-neoliberalisme .tl-caption,
+#web-20-wikipedia-clic-activisme .tl-caption {
+  color: #555555 !important;
+  text-shadow: none !important;
+}
+
 /* ============================================
    LABELS DE GROUPES
    ============================================ */
