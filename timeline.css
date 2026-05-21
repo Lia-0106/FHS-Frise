@@ -5,15 +5,10 @@
   border-radius: 4px;
 }
 
-
-/* === PADDING TITRE ET DATE === */
-.tl-text-headline-container {
-  padding: 15px 20px;
-}
-
 /* === TEXTE NOIR sur slides spécifiques === */
 #les-digerati.tl-full-color-background .tl-headline,
 #les-digerati.tl-full-color-background .tl-headline-date,
+#aux-sources-de-lutopie-numerique.tl-full-color-background .tl-text-content p,
 #stewart-brand-le-nouveau-lsd.tl-full-color-background .tl-headline,
 #stewart-brand-le-nouveau-lsd.tl-full-color-background .tl-headline-date {
   color: #000000 !important;
@@ -78,8 +73,7 @@
 
 /* === ESPACE TITRE / TEXTE === */
 .tl-slide .tl-text .tl-text-content {
-  margin-top: 20px !important;
-  padding: 15px 20px !important;
+  margin-top: 10px !important;
 }
 
 /* === DATES === */
