@@ -20,65 +20,63 @@
   text-align: justify;
 }
 
-/* === TIMELINE NAVIGATION === */
-.tl-timeline {
-  background-color: #f7f6f3;
-}
-
-/* Ligne centrale */
-.tl-timenav-line {
-  background-color: #999999;
-}
-
-/* === ERAS === */
-.tl-timenav-era:nth-child(odd) {
-  background-color: rgba(0, 0, 0, 0.06) !important;
-  border-top: 1px solid rgba(0,0,0,0.15);
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-}
-.tl-timenav-era:nth-child(even) {
-  background-color: rgba(0, 0, 0, 0.12) !important;
-  border-top: 1px solid rgba(0,0,0,0.15);
-  border-bottom: 1px solid rgba(0,0,0,0.08);
-}
-.tl-timenav-era p {
-  color: #333333 !important;
-  font-size: 0.68em;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
 
 /* === MARQUEURS === */
 .tl-timemarker .tl-timemarker-content-container {
   background-color: #ffffff !important;
-  border: 1px solid #bbbbbb !important;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
+  border: 1px solid #cccccc !important;
+  border-radius: 3px !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08) !important;
 }
 
 .tl-timemarker .tl-timemarker-text p {
-  color: #444444 !important;
+  color: #555555 !important;
   font-size: 0.68em;
+  letter-spacing: 0.02em;
 }
 
 /* Marqueur actif */
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
-  background-color: #222222 !important;
-  border-color: #222222 !important;
+  background-color: #1a1a1a !important;
+  border-color: #1a1a1a !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25) !important;
 }
 
 .tl-timemarker.tl-timemarker-active .tl-timemarker-text p {
   color: #ffffff !important;
 }
 
-/* === ESPACE TITRE / TEXTE === */
-.tl-slide .tl-text .tl-text-content {
-  margin-top: 10px !important;
+.tl-timemarker.tl-timemarker-active .tl-timemarker-line-left,
+.tl-timemarker.tl-timemarker-active .tl-timemarker-line-right {
+  background-color: #1a1a1a !important;
+}
+
+/* === LIGNE CENTRALE === */
+.tl-timenav-line {
+  background-color: #cccccc !important;
 }
 
 /* === DATES === */
 .tl-timeaxis .tl-timeaxis-tick p {
-  color: #999999;
+  color: #aaaaaa !important;
   font-size: 0.72em;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
+}
+
+.tl-timeaxis-major .tl-timeaxis-tick p {
+  color: #333333 !important;
+  font-weight: 600;
+}
+
+/* === TEXTE DES ERAS === */
+.tl-timenav-era p {
+  font-size: 0.68em !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+}
+
+/* === ESPACE TITRE / TEXTE === */
+.tl-slide .tl-text .tl-text-content {
+  margin-top: 10px !important;
 }
