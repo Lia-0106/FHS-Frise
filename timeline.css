@@ -90,6 +90,24 @@
   max-width: 100% !important;
 }
 
+/* Crédit et légende côte à côte sous l'image */
+.tl-media-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.tl-media-content .tl-credit,
+.tl-media-content .tl-caption {
+  display: inline !important;
+  width: auto !important;
+}
+
+/* Wrapper crédit+légende sur une même ligne */
+.tl-media-content .tl-credit + .tl-caption {
+  margin-left: 6px !important;
+}
+
 /* ============================================
    TIMELINE EN BAS - FOND SOMBRE
    ============================================ */
