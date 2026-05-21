@@ -74,14 +74,19 @@ img.tl-media-image {
   width: auto !important;
   height: auto !important;
   object-fit: contain !important;
-  display: block !important;
-  margin: 0 auto !important;
+  display: inline !important;
 }
 
 .tl-media-content {
+  text-align: center !important;
+  width: 100% !important;
+}
+
+.tl-media-content-container {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
+  width: 100% !important;
 }
 
 /* ============================================
