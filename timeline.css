@@ -64,11 +64,24 @@
   text-shadow: none !important;
 }
 
+/* === IMAGES === */
+.tl-media .tl-media-image img {
+  max-height: 55vh !important;
+  max-width: 100% !important;
+  width: auto !important;
+  height: auto !important;
+  object-fit: contain !important;
+}
+
+.tl-media {
+  max-height: 55vh !important;
+}
+
 /* ============================================
    TIMELINE EN BAS
    ============================================ */
 
-   
+
 /* Fond général plus chaud */
 .tl-timenav {
   background-color: #f2f2f2 !important;
