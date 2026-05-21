@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Aux sources de l'utopie numérique</title>
+  <link rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+  <style>
+    body { margin: 0; padding: 0; }
+    #timeline-embed { width: 100%; height: 100vh; }
+  </style>
+</head>
+<body>
+  <div id="timeline-embed"></div>
+  <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+  <script>
+    window.onload = function() {
+      var timeline = new TL.Timeline(
+        'timeline-embed',
+        'https://docs.google.com/spreadsheets/d/1BVsaIHhqh7A1QAml8eGc01aFmY25evfn7L-0EadU2fk/edit',
+        {
+          theme: "https://lia-0106.github.io/Frise-FHS/timeline.css"
+        }
+      );
+    }
+  </script>
+</body>
+</html>
