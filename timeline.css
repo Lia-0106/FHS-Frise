@@ -3,7 +3,10 @@
   background-color: rgba(0, 0, 0, 0.5);
   padding: 15px 20px;
   border-radius: 4px;
-  margin-top: 15px; /* espace entre titre et texte */
+}
+
+.tl-slide .tl-text .tl-text-content {
+  margin-top: 200px !important;
 }
 
 /* === PADDING TITRE ET DATE === */
