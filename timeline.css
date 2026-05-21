@@ -1,11 +1,17 @@
-/* === FOND UNIQUEMENT SUR LE TEXTE (pas le titre) === */
+/* === FOND UNIQUEMENT SUR LE TEXTE === */
 .tl-text-content {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 15px 20px;
   border-radius: 4px;
+  margin-top: 15px; /* espace entre titre et texte */
 }
 
-/* === TEXTE NOIR - écrase le !important de TimelineJS === */
+/* === PADDING TITRE ET DATE === */
+.tl-text-headline-container {
+  padding: 15px 20px;
+}
+
+/* === TEXTE NOIR sur slides spécifiques === */
 #les-digerati.tl-full-color-background .tl-text p,
 #les-digerati.tl-full-color-background .tl-headline,
 #les-digerati.tl-full-color-background .tl-headline-date,
@@ -21,49 +27,63 @@
   text-align: justify;
 }
 
-/* === ERAS ALTERNÉES === */
+/* === TIMELINE NAVIGATION === */
+.tl-timeline {
+  background-color: #f7f6f3;
+}
+
+/* Ligne centrale */
+.tl-timenav-line {
+  background-color: #999999;
+}
+
+/* === ERAS === */
 .tl-timenav-era:nth-child(odd) {
-  background-color: #f5f5f0 !important;
+  background-color: rgba(0, 0, 0, 0.06) !important;
+  border-top: 1px solid rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 .tl-timenav-era:nth-child(even) {
-  background-color: #e0e0e0 !important;
+  background-color: rgba(0, 0, 0, 0.12) !important;
+  border-top: 1px solid rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 .tl-timenav-era p {
-  color: #1d1d1d !important;
-  font-size: 0.72em;
+  color: #333333 !important;
+  font-size: 0.68em;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
-/* === TIMELINE NAVIGATION === */
-.tl-timeline {
-  background-color: #1d1d1d;
-}
-.tl-timenav-line {
-  background-color: #ffffff;
-}
+/* === MARQUEURS === */
 .tl-timemarker .tl-timemarker-content-container {
-  background-color: #222222;
-  border: 1px solid #666666;
+  background-color: #ffffff;
+  border: 1px solid #bbbbbb;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 .tl-timemarker .tl-timemarker-text p {
-  color: #cccccc;
-  font-size: 0.7em;
+  color: #444444;
+  font-size: 0.68em;
 }
+
+/* Marqueur actif */
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: #222222;
+  border-color: #222222;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 .tl-timemarker.tl-timemarker-active .tl-timemarker-text p {
-  color: #111111;
+  color: #ffffff;
 }
 .tl-timemarker.tl-timemarker-active .tl-timemarker-line-left,
 .tl-timemarker.tl-timemarker-active .tl-timemarker-line-right {
-  background-color: #ffffff;
+  background-color: #444444;
 }
+
+/* === DATES === */
 .tl-timeaxis .tl-timeaxis-tick p {
-  color: #888888;
-  font-size: 0.75em;
+  color: #999999;
+  font-size: 0.72em;
   letter-spacing: 0.05em;
 }
