@@ -1,14 +1,24 @@
-/* === TEXTE JUSTIFIÉ === */
-.tl-slide .tl-slide-content .tl-text p {
-  text-align: justify;
+/* Fond derrière le bloc texte + titre */
+.tl-slide .tl-text-content,
+.tl-slide .tl-text-headline-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px 20px;
+  border-radius: 4px;
 }
 
-/* === TEXTE NOIR sur slides spécifiques === */
-#les-digerati .tl-text p,
+/* Texte noir pour slides spécifiques */
+#les-digerati .tl-text-content p,
 #les-digerati .tl-headline,
-#stewart-brand-le-nouveau-lsd .tl-text p,
-#stewart-brand-le-nouveau-lsd .tl-headline {
+#les-digerati .tl-headline-date,
+#stewart-brand-le-nouveau-lsd .tl-text-content p,
+#stewart-brand-le-nouveau-lsd .tl-headline,
+#stewart-brand-le-nouveau-lsd .tl-headline-date {
   color: #000000;
+}
+
+/* Texte justifié */
+.tl-slide .tl-text-content p {
+  text-align: justify;
 }
 
 /* === ERAS ALTERNÉES === */
