@@ -12,10 +12,8 @@
 }
 
 /* === TEXTE NOIR sur slides spécifiques === */
-#les-digerati.tl-full-color-background .tl-text p,
 #les-digerati.tl-full-color-background .tl-headline,
 #les-digerati.tl-full-color-background .tl-headline-date,
-#stewart-brand-le-nouveau-lsd.tl-full-color-background .tl-text p,
 #stewart-brand-le-nouveau-lsd.tl-full-color-background .tl-headline,
 #stewart-brand-le-nouveau-lsd.tl-full-color-background .tl-headline-date {
   color: #000000 !important;
