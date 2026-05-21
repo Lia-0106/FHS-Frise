@@ -66,6 +66,14 @@
 
 .tl-media-content-container {
   overflow: hidden !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.tl-media-shadow {
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
 }
 
 img.tl-media-image {
@@ -84,15 +92,22 @@ img.tl-media-image {
   align-items: center !important;
 }
 
-.tl-media-content-container {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-}
 
 /* ============================================
    TIMELINE EN BAS - SOMBRE
    ============================================ */
+
+div.tl-timenav,
+div.tl-timenav-slider,
+div.tl-timenav-slider-background,
+div.tl-timenav-container-mask,
+div.tl-timenav-container {
+  background-color: #1e1e1e !important;
+}
+
+div.tl-timeaxis-background {
+  background-color: #1e1e1e !important;
+}
 
 
 .tl-timegroup-message {
