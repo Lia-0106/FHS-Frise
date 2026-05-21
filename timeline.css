@@ -1,27 +1,87 @@
-/* === FOND UNIQUEMENT SUR LE TEXTE === */
+/* ============================================
+   SLIDES - CONTENU
+   ============================================ */
+
+/* Alignement titre et texte */
+.tl-text-headline-container {
+  padding: 0 0 10px 0;
+}
+
+/* Espace entre titre et texte */
 .tl-text-content {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 15px 20px;
+  margin-top: 15px !important;
+  padding: 15px 20px !important;
   border-radius: 4px;
 }
 
-/* === TEXTE NOIR sur slides spécifiques === */
-#les-digerati.tl-full-color-background .tl-headline,
-#les-digerati.tl-full-color-background .tl-headline-date,
-#aux-sources-de-lutopie-numerique.tl-full-color-background .tl-text-content p,
-#stewart-brand-le-nouveau-lsd.tl-full-color-background .tl-headline,
-#stewart-brand-le-nouveau-lsd.tl-full-color-background .tl-headline-date {
-  color: #000000 !important;
-  text-shadow: none !important;
-}
-
-/* === TEXTE JUSTIFIÉ === */
+/* Texte justifié */
 .tl-slide .tl-text-content p {
   text-align: justify;
 }
 
+/* ============================================
+   FOND SEMI-TRANSPARENT sur le texte
+   ============================================ */
 
-/* === MARQUEURS === */
+/* Sur les slides avec image de fond */
+.tl-full-image-background .tl-text-content,
+.tl-full-color-background .tl-text-content {
+  background-color: rgba(0, 0, 0, 0.45) !important;
+}
+
+/* ============================================
+   TEXTE BLANC par défaut sur fonds colorés
+   ============================================ */
+
+.tl-full-color-background .tl-text-content p,
+.tl-full-image-background .tl-text-content p {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* ============================================
+   TEXTE NOIR sur slides spécifiques
+   ============================================ */
+
+#les-digerati .tl-text-content p,
+#les-digerati .tl-headline,
+#les-digerati .tl-headline-date,
+#stewart-brand-le-nouveau-lsd .tl-text-content p,
+#stewart-brand-le-nouveau-lsd .tl-headline,
+#stewart-brand-le-nouveau-lsd .tl-headline-date {
+  color: #000000 !important;
+  text-shadow: none !important;
+}
+
+/* ============================================
+   SLIDE TITRE
+   ============================================ */
+
+#aux-sources-de-lutopie-numerique .tl-text-content {
+  background-color: rgba(0, 0, 0, 0.45) !important;
+}
+
+#aux-sources-de-lutopie-numerique .tl-text-content p {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* ============================================
+   TIMELINE EN BAS
+   ============================================ */
+
+/* Fond général */
+.tl-timenav {
+  background-color: #fafafa !important;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Ligne centrale */
+.tl-timenav-line {
+  background-color: #bbbbbb !important;
+}
+
+/* Marqueurs normaux */
 .tl-timemarker .tl-timemarker-content-container {
   background-color: #ffffff !important;
   border: 1px solid #cccccc !important;
@@ -31,15 +91,15 @@
 
 .tl-timemarker .tl-timemarker-text p {
   color: #555555 !important;
-  font-size: 0.68em;
-  letter-spacing: 0.02em;
+  font-size: 0.68em !important;
+  letter-spacing: 0.02em !important;
 }
 
 /* Marqueur actif */
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
   background-color: #1a1a1a !important;
   border-color: #1a1a1a !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.25) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
 }
 
 .tl-timemarker.tl-timemarker-active .tl-timemarker-text p {
@@ -48,35 +108,21 @@
 
 .tl-timemarker.tl-timemarker-active .tl-timemarker-line-left,
 .tl-timemarker.tl-timemarker-active .tl-timemarker-line-right {
-  background-color: #1a1a1a !important;
+  background-color: #555555 !important;
 }
 
-/* === LIGNE CENTRALE === */
-.tl-timenav-line {
-  background-color: #cccccc !important;
-}
-
-/* === DATES === */
+/* Dates */
 .tl-timeaxis .tl-timeaxis-tick p {
   color: #aaaaaa !important;
-  font-size: 0.72em;
-  letter-spacing: 0.06em;
+  font-size: 0.72em !important;
+  letter-spacing: 0.05em !important;
 }
 
-.tl-timeaxis-major .tl-timeaxis-tick p {
-  color: #333333 !important;
-  font-weight: 600;
-}
-
-/* === TEXTE DES ERAS === */
+/* Eras (groupes) */
 .tl-timenav-era p {
+  color: #333333 !important;
   font-size: 0.68em !important;
   font-weight: 600 !important;
   letter-spacing: 0.1em !important;
   text-transform: uppercase !important;
-}
-
-/* === ESPACE TITRE / TEXTE === */
-.tl-slide .tl-text .tl-text-content {
-  margin-top: 10px !important;
 }
