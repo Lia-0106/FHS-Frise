@@ -68,59 +68,72 @@
    TIMELINE EN BAS
    ============================================ */
 
-/* Fond général */
+   
+/* Fond général plus chaud */
 .tl-timenav {
-  background-color: #fafafa !important;
-  border-top: 1px solid #e0e0e0;
-}
-
-/* Ligne centrale */
-.tl-timenav-line {
-  background-color: #bbbbbb !important;
+  background-color: #f2f2f2 !important;
+  border-top: 2px solid #dddddd;
 }
 
 /* Marqueurs normaux */
 .tl-timemarker .tl-timemarker-content-container {
   background-color: #ffffff !important;
-  border: 1px solid #cccccc !important;
+  border: 1px solid #bbbbbb !important;
   border-radius: 3px !important;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.08) !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1) !important;
 }
 
 .tl-timemarker .tl-timemarker-text p {
-  color: #555555 !important;
+  color: #333333 !important;
   font-size: 0.68em !important;
-  letter-spacing: 0.02em !important;
 }
 
-/* Marqueur actif */
+/* Marqueur actif — plus doux */
 .tl-timemarker.tl-timemarker-active .tl-timemarker-content-container {
-  background-color: #1a1a1a !important;
-  border-color: #1a1a1a !important;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+  background-color: #444444 !important;
+  border-color: #444444 !important;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2) !important;
 }
 
 .tl-timemarker.tl-timemarker-active .tl-timemarker-text p {
   color: #ffffff !important;
 }
 
+/* Hover */
+.tl-timemarker:hover .tl-timemarker-content-container {
+  background-color: #eeeeee !important;
+  border-color: #999999 !important;
+}
+
+.tl-timemarker:hover .tl-timemarker-text p {
+  color: #111111 !important;
+}
+
 .tl-timemarker.tl-timemarker-active .tl-timemarker-line-left,
 .tl-timemarker.tl-timemarker-active .tl-timemarker-line-right {
-  background-color: #555555 !important;
+  background-color: #666666 !important;
 }
 
-/* Dates */
-.tl-timeaxis .tl-timeaxis-tick p {
-  color: #aaaaaa !important;
-  font-size: 0.72em !important;
-  letter-spacing: 0.05em !important;
+/* Eras */
+.tl-timenav-era {
+  border-top: 1px solid #dddddd !important;
 }
 
-/* Eras (groupes) */
 .tl-timenav-era p {
-  color: #333333 !important;
+  color: #555555 !important;
   font-size: 0.68em !important;
   font-weight: 600 !important;
   letter-spacing: 0.1em !important;
   text-transform: uppercase !important;
+}
+
+/* Dates */
+.tl-timeaxis .tl-timeaxis-tick p {
+  color: #999999 !important;
+  font-size: 0.72em !important;
+}
+
+/* Ligne centrale */
+.tl-timenav-line {
+  background-color: #cccccc !important;
 }
