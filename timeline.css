@@ -22,8 +22,8 @@ html {
   z-index: 0 !important;
 }
 
-#aux-sources-de-lutopie-numerique .tl-text-content {
-  background-color: rgb(23, 23, 23) !important;
+#aux-sources-de-lutopie-numerique.tl-slide .tl-text-content {
+  background-color: rgba(26, 26, 26, 0.7) !important;
 }
 
 #aux-sources-de-lutopie-numerique > * {
