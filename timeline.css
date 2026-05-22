@@ -27,6 +27,21 @@ html {
   z-index: 1 !important;
 }
 
+#aux-sources-de-lutopie-numerique .tl-headline,
+#aux-sources-de-lutopie-numerique .tl-headline-date {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+#aux-sources-de-lutopie-numerique .tl-caption {
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+#aux-sources-de-lutopie-numerique .tl-text-content p {
+  opacity: 1 !important;
+}
+
 .tl-text-headline-container {
   padding: 0 0 5px 0;
 }
