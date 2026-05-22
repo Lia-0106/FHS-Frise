@@ -8,6 +8,25 @@ html {
   overflow: hidden !important;
 }
 
+#aux-sources-de-lutopie-numerique {
+  background-image: url('https://imgs.search.brave.com/m4amBnniJlKxFzy8EXPovEFHe2b2qIBY5OabkYUmh8k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9k/L2QzL0dsZW5fQmVj/a19hbmRfQmV0dHlf/U255ZGVyX3Byb2dy/YW1fdGhlX0VOSUFD/X2luX2J1aWxkaW5n/XzMyOF9hdF90aGVf/QmFsbGlzdGljX1Jl/c2VhcmNoX0xhYm9y/YXRvcnkuanBn') !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+#aux-sources-de-lutopie-numerique::before {
+  content: '' !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  z-index: 0 !important;
+}
+
+#aux-sources-de-lutopie-numerique > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
 .tl-text-headline-container {
   padding: 0 0 5px 0;
 }
