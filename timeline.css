@@ -113,7 +113,14 @@ html {
 #militants-de-linternet .tl-caption,
 #declaration-dindependance-du-cyberespace .tl-caption,
 #la-contre-culture-recyclee-en-neoliberalisme .tl-caption,
-#web-20-wikipedia-clic-activisme .tl-caption {
+#web-20-wikipedia-clic-activisme .tl-caption,
+#arpanet-naissance-de-la-contre-culture .tl-credit,
+#nls-la-mere-de-toutes-les-demos- .tl-credit,
+#les-digerati .tl-credit,
+#militants-de-linternet .tl-credit,
+#declaration-dindependance-du-cyberespace .tl-credit,
+#la-contre-culture-recyclee-en-neoliberalisme .tl-credit,
+#web-20-wikipedia-clic-activisme .tl-credit {
   color: #1b1b1b !important;
   text-shadow: none !important;
 }
